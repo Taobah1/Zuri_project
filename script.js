@@ -17,14 +17,9 @@ function appendDecimal() {
   }
 }
 
-function clearInput() {
-  currentInput = "";
-  updateDisplay();
-}
-
 function calculate() {
   try {
-    const result = eval(currentInput);
+    const result = eval(currentInput.replace(/x/g, "*").replace(/÷/g, "/"));
     document.getElementById("output").value = result;
   } catch (error) {
     document.getElementById("output").value = "Error";
