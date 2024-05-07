@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div class="master-wrap">
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <td colspan="4">
+                <input class="output" id="output" value="0" type="text" />
+              </td>
+              <!--                <td><input type="button" value="AC"></td>-->
+            </tr>
+
+            <tr>
+              <td><button onclick="appendNumber(7)">7</button></td>
+              <td><button onclick="appendNumber(8)">8</button></td>
+              <td><button onclick="appendNumber(9)">9</button></td>
+              <td><button onclick="appendOperator('/')">÷</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="appendNumber(4)">4</button></td>
+              <td><button onclick="appendNumber(5)">5</button></td>
+              <td><button onclick="appendNumber(6)">6</button></td>
+              <td><button onclick="appendOperator('*')">×</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="appendNumber(1)">1</button></td>
+              <td><button onclick="appendNumber(2)">2</button></td>
+              <td><button onclick="appendNumber(3)">3</button></td>
+              <td><button onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button onclick="appendNumber(0)">0</button></td>
+              <!--                <td><button onclick="clearInput()">C</button></td>-->
+              <td><button onclick="appendDecimal()">.</button></td>
+              <td><button onclick="appendOperator('+')">+</button></td>
+              <td>
+                <button
+                  onclick="calculate()"
+                  style="
+                    background: sandybrown;
+                    border: 1px solid sandybrown;
+                    box-shadow: 0 10px #de8b07;
+                  ">
+                  =
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
