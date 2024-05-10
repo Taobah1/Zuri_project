@@ -8,6 +8,18 @@ body {
   background-color: lightgray;
 }
 
+.repo {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.repo a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
 table {
   border: none;
   height: 400px;
@@ -34,7 +46,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 40px;
 }
 
 .output {
