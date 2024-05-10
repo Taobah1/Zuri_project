@@ -29,3 +29,4 @@ function calculate() {
 function updateDisplay() {
   document.getElementById("output").value = currentInput;
 }
+
